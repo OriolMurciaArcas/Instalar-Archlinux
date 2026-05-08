@@ -33,9 +33,11 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 ![7. configuración de discos (guardamos con w)](https://hackmd.io/_uploads/ryd8VtiCbe.png)
 
 10. Formateamos los discos
+    
 ![8. Formateamos particiones](https://hackmd.io/_uploads/H1CEqFsAZx.png)
 
 11. Montamos el sistema de arhivos
+    
 ![9 montamos sistema de archivos](https://hackmd.io/_uploads/S1rD5YsCbg.png)
 
 12. Editamos el archivo /etc/pacman.d/mirror y ponemos arriba del todo los servidores mas cercanos a nosotros. (Es donde se harán nuestras actualizaciones
@@ -50,6 +52,7 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 - nano (para editor de texto)
 - networkmanager (para gestión de red)
 - amd-ucode o intel-ucode (para parches de seguridad de la cpu)
+  
 ![13](https://hackmd.io/_uploads/rkk1iFsCbg.png)
 
 15. Creamos archivo para indicar al sistema que particiones tiene que montar automáticamente al encender el sistema.
