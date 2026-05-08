@@ -17,12 +17,13 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 ![4 comprobar que tenemos conexión a internet](https://hackmd.io/_uploads/H1FJEFsCbe.png)
 
 6. Sincronizamos el reloj del sistema.
+   
 ![5 comprobar fecha](https://hackmd.io/_uploads/HkTMNKjC-x.png)
 
-7. Comprobamos que discos tenemos para hacer posteriormente las particiones.
+8. Comprobamos que discos tenemos para hacer posteriormente las particiones.
 ![6 comprobamos discos](https://hackmd.io/_uploads/BJnBNYoCWl.png)
 
-8. Usaremos fdisk/dev/nuestro_disco para hacer las particiones UEFI (en nuestro caso, también se puedo con BOOT).
+9. Usaremos fdisk/dev/nuestro_disco para hacer las particiones UEFI (en nuestro caso, también se puedo con BOOT).
 1.Pondremos el comando g para indicar que usaremos UEFI
 2.Crearemos la partición 1 (será la partición para el boot de arranque)
 3.Crearemos la partición 2 que usaremos como memoria swap y asignamos que sea swap
@@ -31,59 +32,65 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 ![7.1](https://hackmd.io/_uploads/B11AStoCbe.png)
 ![7. configuración de discos (guardamos con w)](https://hackmd.io/_uploads/ryd8VtiCbe.png)
 
-9. Formateamos los discos
+10. Formateamos los discos
 ![8. Formateamos particiones](https://hackmd.io/_uploads/H1CEqFsAZx.png)
 
-10. Montamos el sistema de arhivos
+11. Montamos el sistema de arhivos
 ![9 montamos sistema de archivos](https://hackmd.io/_uploads/S1rD5YsCbg.png)
 
-11. Editamos el archivo /etc/pacman.d/mirror y ponemos arriba del todo los servidores mas cercanos a nosotros. (Es donde se harán nuestras actualizaciones)
+12. Editamos el archivo /etc/pacman.d/mirror y ponemos arriba del todo los servidores mas cercanos a nosotros. (Es donde se harán nuestras actualizaciones
+
 ![10. Editamos archivo con nuestra región](https://hackmd.io/_uploads/ByOd9YoAZl.png)
 
-12. Instalamos los paquetes más basicos
+13. Instalamos los paquetes más basicos
+    
 ![11 instalar paquetes basicos](https://hackmd.io/_uploads/Sy86qFiCWx.png)
 
-12.Añadimos paquetes imprescindibles:
+14. Añadimos paquetes imprescindibles:
 - nano (para editor de texto)
 - networkmanager (para gestión de red)
 - amd-ucode o intel-ucode (para parches de seguridad de la cpu)
 ![13](https://hackmd.io/_uploads/rkk1iFsCbg.png)
 
-13. Creamos archivo para indicar al sistema que particiones tiene que montar automáticamente al encender el sistema.
+15. Creamos archivo para indicar al sistema que particiones tiene que montar automáticamente al encender el sistema.
 ![14 indicaos al sistema que hace cada particion ](https://hackmd.io/_uploads/Syg6sYoR-l.png)
 
-14. Indicamos la raíz del sistema.
+16. Indicamos la raíz del sistema.
+    
 ![15. Cambiamos la raíz del sistema](https://hackmd.io/_uploads/SyHXpti0bl.png)
 
-15. Cambiamos zona horaria y generamos archivo para que se sincronice cada vez que encendamos el pc con hwclock --systohc.
+17. Cambiamos zona horaria y generamos archivo para que se sincronice cada vez que encendamos el pc con hwclock --systohc.
 ![16. cambiamos zona horaria y generamos archivo etc adjtime](https://hackmd.io/_uploads/BycDaKjCZg.png)
 
-16. Editamos archivo locale.gen para asignar el idioma que queremos al encender el pc.
+18. Editamos archivo locale.gen para asignar el idioma que queremos al encender el pc.
 ![17 editamos archivo locale.gen para seleccionar idioma](https://hackmd.io/_uploads/SJs1RKoAWg.png)
 
-17. Creamos archivo locale.gen para asignar la distribucion del teclado que queremos al encender el pc.
+19. Creamos archivo locale.gen para asignar la distribucion del teclado que queremos al encender el pc.
 ![18. creamos archivo y ponemos idioma del teclado que queremos](https://hackmd.io/_uploads/Hyjf0Ko0Wl.png)
 
-18. Creamos archivo indicando como se llamara el hostname.
+20. Creamos archivo indicando como se llamara el hostname.
 ![19 creamos archivo hostname](https://hackmd.io/_uploads/S1X_J5iAWe.png)
 
-19. Generamos initramfs para indicar como cargar todo el sistema de arranque.
+21. Generamos initramfs para indicar como cargar todo el sistema de arranque.
+    
 ![20. generamos initramfs](https://hackmd.io/_uploads/Sk_tJ9sRWx.png)
 
-20. Cambiamos contraseña a usuario root.
+22. Cambiamos contraseña a usuario root.
+    
 ![21. creamos contraseña root](https://hackmd.io/_uploads/Skebgqi0bx.png)
 
-21. Instalamos paquetes necesarios para instalar GRUB (que es el gestor de arranque que usaremos)
+24. Instalamos paquetes necesarios para instalar GRUB (que es el gestor de arranque que usaremos)
+    
 ![22 instalamos paquetes necesarios](https://hackmd.io/_uploads/SJyMxcjA-l.png)
 
-22. Instalamos GRUB
+26. Instalamos GRUB
 ![23. instalamos grub en el disco](https://hackmd.io/_uploads/HkDdgci0-l.png)
 
-23. Creamos el archivo de configuración para que funcione GRUB
+27. Creamos el archivo de configuración para que funcione GRUB
 ![24. creamos archivo de configuracion](https://hackmd.io/_uploads/BJz6gcsAZx.png)
 
-24. Desmontamos discos de forma segura.
+28. Desmontamos discos de forma segura.
 ![25. desmontamos discaos de forma segura](https://hackmd.io/_uploads/SJ59-coAbx.png)
 
-25. Reiniciamos y quitamos imagen iso para iniciar en Archlinux.
+29. Reiniciamos y quitamos imagen iso para iniciar en Archlinux.
 ![26](https://hackmd.io/_uploads/Hk8hZ5jCZg.png)
