@@ -33,12 +33,13 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 8. Formateamos los discos
 ![8. Formateamos particiones](https://hackmd.io/_uploads/H1CEqFsAZx.png)
 
-9. Montamos el sistema de arhivos![9 montamos sistema de archivos](https://hackmd.io/_uploads/S1rD5YsCbg.png)
+9. Montamos el sistema de arhivos
+![9 montamos sistema de archivos](https://hackmd.io/_uploads/S1rD5YsCbg.png)
 
-10. Editamos el archivo /etc/pacman.d/mirror y ponemos arriba del todo los servidores mas cercanos a nosotros. (Es donde se harán nuestras actualizaciones)
+11. Editamos el archivo /etc/pacman.d/mirror y ponemos arriba del todo los servidores mas cercanos a nosotros. (Es donde se harán nuestras actualizaciones)
 ![10. Editamos archivo con nuestra región](https://hackmd.io/_uploads/ByOd9YoAZl.png)
 
-11. Instalamos los paquetes más basicos
+12. Instalamos los paquetes más basicos
 ![11 instalar paquetes basicos](https://hackmd.io/_uploads/Sy86qFiCWx.png)
 
 12.Añadimos paquetes imprescindibles:
