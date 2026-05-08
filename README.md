@@ -10,18 +10,19 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 ![2 cambiar idioma teclado](https://hackmd.io/_uploads/By6F7KoCbg.png)
 
 3. Verificamos que la arquitectura UEFI es correcta.
+
 ![3 arquitectura uefi](https://hackmd.io/_uploads/SktTXFjCWx.png)
 
-4. Comprobamos que tenemos conexión a internet.
+5. Comprobamos que tenemos conexión a internet.
 ![4 comprobar que tenemos conexión a internet](https://hackmd.io/_uploads/H1FJEFsCbe.png)
 
-5. Sincronizamos el reloj del sistema.
+6. Sincronizamos el reloj del sistema.
 ![5 comprobar fecha](https://hackmd.io/_uploads/HkTMNKjC-x.png)
 
-6. Comprobamos que discos tenemos para hacer posteriormente las particiones.
+7. Comprobamos que discos tenemos para hacer posteriormente las particiones.
 ![6 comprobamos discos](https://hackmd.io/_uploads/BJnBNYoCWl.png)
 
-7. Usaremos fdisk/dev/nuestro_disco para hacer las particiones UEFI (en nuestro caso, también se puedo con BOOT).
+8. Usaremos fdisk/dev/nuestro_disco para hacer las particiones UEFI (en nuestro caso, también se puedo con BOOT).
 1.Pondremos el comando g para indicar que usaremos UEFI
 2.Crearemos la partición 1 (será la partición para el boot de arranque)
 3.Crearemos la partición 2 que usaremos como memoria swap y asignamos que sea swap
@@ -30,10 +31,10 @@ https://wiki.archlinux.org/title/Installation_guide_(Espa%C3%B1ol)
 ![7.1](https://hackmd.io/_uploads/B11AStoCbe.png)
 ![7. configuración de discos (guardamos con w)](https://hackmd.io/_uploads/ryd8VtiCbe.png)
 
-8. Formateamos los discos
+9. Formateamos los discos
 ![8. Formateamos particiones](https://hackmd.io/_uploads/H1CEqFsAZx.png)
 
-9. Montamos el sistema de arhivos
+10. Montamos el sistema de arhivos
 ![9 montamos sistema de archivos](https://hackmd.io/_uploads/S1rD5YsCbg.png)
 
 11. Editamos el archivo /etc/pacman.d/mirror y ponemos arriba del todo los servidores mas cercanos a nosotros. (Es donde se harán nuestras actualizaciones)
